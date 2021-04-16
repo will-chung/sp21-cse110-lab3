@@ -1,0 +1,35 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    color: #FFCD00;
+    text-decoration: overline double;
+    text-align: center;
+}
+
+h2 {
+    color: #182B49;
+    text-decoration: overline;
+}
+
+h3 {
+    color: #FFCD00;
+    text-decoration: overline;
+}
+
+#newentry {
+    color: black; 
+}
+
+.entry {
+    color: #00629B;
+}
+
+.list {
+    color: #C69214;
+}
+
+#haiku {
+    font-family: 'EB Garamond', serif;
+}
