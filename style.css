@@ -9,17 +9,34 @@ h1 {
 }
 
 h2 {
-    color: #182B49;
-    text-decoration: overline;
-}
-
-h3 {
     color: #FFCD00;
     text-decoration: overline;
 }
 
-#newentry {
-    color: black; 
+h3 {
+    color: #00629B;
+    text-decoration: overline;
+}
+
+footer {
+    padding: 8px;
+    background-color: #B6B1A9;
+}
+
+details:hover {
+    color: #FFCD00;
+}
+
+button:hover {
+    color: #00C6D7;
+}
+
+a:hover {
+    color: #FFCD00;
+}
+
+a:active {
+    color: red;
 }
 
 .entry {
@@ -27,9 +44,17 @@ h3 {
 }
 
 .list {
-    color: #C69214;
+    color: #00C6D7;
+}
+
+#newentry {
+    color: black; 
 }
 
 #haiku {
     font-family: 'EB Garamond', serif;
+}
+
+@media (min-width: 720px) {
+    
 }
