@@ -1,3 +1,7 @@
+* head main {
+    background-color: white;
+}
+
 header {
     display: grid;
     gap: 5px;
@@ -39,15 +43,20 @@ h2 {
     text-decoration: overline;
 }
 
-h3 {
+h2[id="6april2021"] {
+    color: red;
+    text-decoration: underline;
+}
+
+main > h3 {
     color: #00629B;
     text-decoration: overline;
 }
 
-footer {
+body footer {
     padding: 1rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     background-color: #B6B1A9;
     border-style: solid;
     border-color: #00629b;
@@ -55,16 +64,12 @@ footer {
     border-radius: 10px;
 }
 
-details:hover {
+details:hover, a:hover {
     color: #FFCD00;
 }
 
-button:hover {
+button:hover, .list {
     color: #00C6D7;
-}
-
-a:hover {
-    color: #FFCD00;
 }
 
 a:active {
@@ -75,16 +80,12 @@ figure {
     display: block;
 }
 
-.entry {
+p + blockquote {
+    color: #FFCD00;
+}
+
+figure ~ p, p.entry {
     color: #00629B;
-}
-
-.list {
-    color: #00C6D7;
-}
-
-#newentry {
-    color: black; 
 }
 
 #haiku {
