@@ -41,9 +41,8 @@ h2 {
     text-decoration: overline;
 }
 
-/* Date (child combinator) */
+/* "New Journal Entry" (child combinator) */
 footer > h3 {
-    color: #00C6D7;
     text-decoration: overline;
 }
 
@@ -65,7 +64,7 @@ a:hover, details:hover {
     color: #FFCD00;
 }
 
-/* All lists (class selector, selector list) */
+/* All elements of class list (class selector, selector list) */
 button:hover, .list {
     color: #00C6D7;
 }
@@ -84,7 +83,7 @@ figure ~ p, p.entry {
     color: #00629B;
 }
 
-/* 6 April 2021 (attribute selector) */
+/* "6 April 2021" (attribute selector) */
 h2[id="6april2021"] {
     text-decoration: overline underline;
 }
@@ -97,7 +96,6 @@ p + blockquote, #haiku {
 }
 
 #author {
-    color: #00C6D7;
     font-size: 14pt;
 }
 
