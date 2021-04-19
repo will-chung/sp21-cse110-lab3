@@ -1,12 +1,9 @@
-* head main {
-    background-color: white;
-}
-
+/* element selector */
 header {
-    display: grid;
-    gap: 5px;
-    place-items: center;
-    place-content: center;
+    display: grid;                         /* grid layout */
+    gap: 5px;                              /* gap between grid elements */
+    place-items: center;                   /* center in grid */
+    place-content: center;                 /* center in page */
 }
 
 nav {
@@ -15,44 +12,43 @@ nav {
     border-color: black;
     margin: auto;
     padding: 1em;
-    height: auto;
-    width: 400px;
+    height: auto;                          /* height fits content */
+    width: 400px;                          /* fixed width */
 }
 
 body {
     margin: 12.5em;
     margin-top: 2em;
     margin-bottom: 2em;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
+    font-family: 'Open Sans', sans-serif; 
+    display: flex;                         /* flex layout */
+    flex-wrap: nowrap;                     /* stay on one line */
+    flex-direction: column;                /* single column */
+    place-content: center;                 /* center in page */
 }
 
 h1 {
     color: #FFCD00;
     text-decoration: overline double;
     text-align: center;
-    position: sticky;
+    position: sticky;                      /* scrolls with top of page */
     top: 20px;
 }
 
+/* Day # */
 h2 {
     color: #FFCD00;
     text-decoration: overline;
 }
 
-h2[id="6april2021"] {
-    color: red;
-    text-decoration: underline;
-}
-
-main > h3 {
-    color: #00629B;
+/* Date (child combinator) */
+footer > h3 {
+    color: #00C6D7;
     text-decoration: overline;
 }
 
+
+/* New Journal Entry form (descendant combinator) */
 body footer {
     padding: 1rem;
     padding-top: 0.5rem;
@@ -64,44 +60,54 @@ body footer {
     border-radius: 10px;
 }
 
-details:hover, a:hover {
+/* Links + Reflection sections (pseudo-class selector) */
+a:hover, details:hover {
     color: #FFCD00;
 }
 
+/* All lists (class selector, selector list) */
 button:hover, .list {
     color: #00C6D7;
 }
 
+/* Clicked links */
 a:active {
     color: red;
 }
 
 figure {
-    display: block;
+    display: block;                        /* block-level element */
 }
 
-p + blockquote {
-    color: #FFCD00;
-}
-
+/* Journal entries (general sibling combinator, combining two selectors) */
 figure ~ p, p.entry {
     color: #00629B;
 }
 
-#haiku {
+/* 6 April 2021 (attribute selector) */
+h2[id="6april2021"] {
+    text-decoration: overline underline;
+}
+
+/* Haiku (adjacent sibling combinator, ID selector) */
+p + blockquote, #haiku {
+    color: #FFCD00;
     font-family: 'EB Garamond', serif;
     font-size: 18px;
 }
 
 #author {
-    color: #FFCD00;
+    color: #00C6D7;
     font-size: 14pt;
 }
 
 #hidden {
-    display: none;
+    display: none;                         /* Hide from view */
 }
 
+
+/* Media query */
+/* For screens smaller than 12in, reduce the margin */
 @media (max-width: 12in) {
     body {
         margin: 10em;
